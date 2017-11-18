@@ -1,0 +1,9 @@
+button #jq_creater {
+   margin: 10px 0 10px 30px;
+   
+   max-width: 200px;
+   float: left;
+}
+button #jq_adam {
+   float: right;
+}
