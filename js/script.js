@@ -4,7 +4,7 @@ function Button(text) {
 }
 Button.prototype.create = function() {
    var self = this;
-   this.$element = $('<button>');
+   this.$element = $('<button class="del">');
    this.$element.text(this.text);
          this.$element.click(function() {
          alert(self.text);
@@ -19,4 +19,7 @@ $('#jq_creater').click(function() {
 var adamButton = new Button("hej Adam!");
 $('#jq_adam').click(function() {
  adamButton.create();
+});
+$('#remove').click(function(){
+   $(".del").last().remove();
 });
